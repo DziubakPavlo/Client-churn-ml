@@ -6,7 +6,9 @@
 
 Використовується IBM Telco Customer Churn: характеристики клієнтів, послуг, контрактів та платежів. Важливі поля: `customerID` (ідентифікатор, не ознака моделі), `gender`, `SeniorCitizen`, `tenure`, `Contract`, `InternetService`, `TechSupport`, `PaymentMethod`, `MonthlyCharges`, `TotalCharges` і `Churn`. Датасет також містить інші ознаки послуг.
 
-Оригінальний CSV з [прикладу IBM](https://github.com/IBM/telco-customer-churn-on-icp4d) розміщується локально як `data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv`. Якщо файла немає, завантажте його з [IBM](https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv) і збережіть під цим ім'ям, або завантажте CSV з [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn). Перевіряйте умови використання джерела. Сирі дані не змінюються ноутбуком і не включаються до Git.
+Оригінальний CSV з [прикладу IBM](https://github.com/IBM/telco-customer-churn-on-icp4d) розміщується локально як `data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv`. Якщо файла немає, завантажте [зафіксовану версію з IBM](https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/d5371f5d83a446ad5673cbcca3b814b926491f8a/data/Telco-Customer-Churn.csv) і збережіть під цим ім'ям. Альтернативне джерело — [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn), але байтової ідентичності цього файла не перевірено. Перевіряйте умови використання джерела. Сирі дані не змінюються ноутбуком і не включаються до Git.
+
+SHA-256 зафіксованого CSV: `16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91`. У PowerShell перевірте файл командою `Get-FileHash .\data\raw\WA_Fn-UseC_-Telco-Customer-Churn.csv -Algorithm SHA256`.
 
 ## Середовище та запуск
 
@@ -33,6 +35,8 @@ reports/research/  матеріали дослідження
 ```
 
 Ноутбуки підготовки даних, навчання й оцінювання та модулі `src` будуть створені на відповідних наступних етапах.
+
+Підібрані наукові публікації та статус їхнього опрацювання: [reports/research/articles.md](reports/research/articles.md).
 
 ## План експериментів
 
